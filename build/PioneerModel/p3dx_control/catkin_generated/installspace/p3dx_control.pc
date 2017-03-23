@@ -1,0 +1,8 @@
+prefix=/home/arjun/room_rover/install
+
+Name: p3dx_control
+Description: Description of p3dx_control
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/arjun/room_rover/install/lib 
+Requires: 

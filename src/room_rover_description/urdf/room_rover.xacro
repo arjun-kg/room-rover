@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<robot name="room_rover"
+xmlns:xacro="http://www.ros.org/wiki/xacro">
+<xacro:include filename="$(find room_rover_description)/PioneerModel/p3dx_description/urdf/pioneer3dx.xacro" />
+<xacro:include filename="$(find room_rover_description)/cyton_gamma_1500_description/cyton_gamma_1500.urdf.xacro" />
+
+<xacro:p3dx/>
+<xacro:cyton_gamma_1500/>
+
+	<joint name="arm_base" type="fixed">
+		<axis xyz="0 1 0" />
+		<origin xyz="0 0 ${0.234+0.01}" rpy="0 0 0" />  
+		<!-- The z-value is stolen from top-plate position w.r.t base link, 0.01 being z-dimension of collision cuboid-->
+		<parent link="base_link" />
+		<child link="arm_base_footprint" />
+	</joint>
+</robot>

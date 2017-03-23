@@ -1,0 +1,8 @@
+prefix=/home/arjun/room_rover/devel
+
+Name: room_rover_description
+Description: Description of room_rover_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/arjun/room_rover/devel/lib 
+Requires: 
